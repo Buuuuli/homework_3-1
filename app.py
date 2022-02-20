@@ -41,7 +41,7 @@ app.layout = html.Div([
             html.Div(
                 children = [
                     html.Label('Date:'),
-                    dcc.DatePickerSingle(id='edt-date')
+                    dcc.DatePickerSingle(display_format='YYYYMMDD', id='edt-date')
                 ],
                 style = {
                     'display': 'inline-block',
@@ -76,6 +76,28 @@ app.layout = html.Div([
                 style = {'display': 'inline-block'}
             )
         ]
+    ),
+    html.H4("Select bar size"),
+    html.Div(
+        dcc.Dropdown(
+            ['1 secs',	'5 secs',	'10 secs',	'15 secs',	'30 secs','1 min','2 mins',
+             '3 mins',	'5 mins',	'10 mins',	'15 mins',	'20 mins',	'30 mins','1 hour',
+             '2 hours',	'3 hours',	'4 hours',	'8 hours','1 day','1 week','1 month'],
+            "5 mins",
+            id='barsize-input'
+        )
+
+    ),
+    html.H4("decide whether or not to retrieve data generated only within Regular Trading Hours"),
+    html.Div(
+        dcc.Dropdown(
+            ['1', '0'], "1", id='useRTH-input')
+    ),
+
+    html.H4("decide duration str, the format should be '1 D', "
+            "the accepted strs are S: second, D: day, W:, week, M: month, Y: year"),
+    html.Div(
+      dcc.Input(id='duration-input', value='30 D', type='text')
     ),
 
     html.H4("Enter a currency pair:"),
@@ -143,16 +165,20 @@ app.layout = html.Div([
     #   of 'currency-input' at the time the button was pressed DOES get passed in.
     [State('currency-input', 'value'), State('what-to-show', 'value'),
      State('edt-date', 'date'), State('edt-hour', 'value'),
-     State('edt-minute', 'value'), State('edt-second', 'value')]
+     State('edt-minute', 'value'), State('edt-second', 'value'),
+     State('barsize-input','value'), State('useRTH-input','value'), State('duration-input','value')]
 )
 def update_candlestick_graph(n_clicks, currency_string, what_to_show,
-                             edt_date, edt_hour, edt_minute, edt_second):
+                             edt_date, edt_hour, edt_minute, edt_second,
+                             barsize_input, userth_input, duration_input):
     # n_clicks doesn't
     # get used, we only include it for the dependency.
 
     if any([i is None for i in [edt_date, edt_hour, edt_minute, edt_second]]):
         endDateTime = ''
     else:
+        time = "%s:%s:%s" % (edt_hour, edt_minute, edt_second)
+        endDateTime = '%s %s'% (edt_date, time)
         print(edt_date, edt_hour, edt_minute, edt_second)
 
     # First things first -- what currency pair history do you want to fetch?
@@ -175,28 +201,28 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     # Some default values are provided below to help with your testing.
     # Don't forget -- you'll need to update the signature in this callback
     #   function to include your new vars!
-    # cph = fetch_historical_data(
-    #     contract=contract,
-    #     endDateTime='',
-    #     durationStr='30 D',       # <-- make a reactive input
-    #     barSizeSetting='1 hour',  # <-- make a reactive input
-    #     whatToShow=what_to_show,
-    #     useRTH=True               # <-- make a reactive input
-    # )
-    # # # Make the candlestick figure
-    # fig = go.Figure(
-    #     data=[
-    #         go.Candlestick(
-    #             x=cph['date'],
-    #             open=cph['open'],
-    #             high=cph['high'],
-    #             low=cph['low'],
-    #             close=cph['close']
-    #         )
-    #     ]
-    # )
+    cph = fetch_historical_data(
+         contract=contract,
+         endDateTime=endDateTime,
+         durationStr=duration_input,       # <-- make a reactive input
+         barSizeSetting=barsize_input,  # <-- make a reactive input
+         whatToShow=what_to_show,
+         useRTH=userth_input             # <-- make a reactive input
+     )
+     # # Make the candlestick figure
+    fig = go.Figure(
+         data=[
+             go.Candlestick(
+                 x=cph['date'],
+                 open=cph['open'],
+                 high=cph['high'],
+                 low=cph['low'],
+                 close=cph['close']
+             )
+         ]
+     )
     # # # Give the candlestick figure a title
-    # fig.update_layout(title=('Exchange Rate: ' + currency_string))
+    fig.update_layout(title=('Exchange Rate: ' + currency_string))
     ############################################################################
     ############################################################################
 
@@ -204,22 +230,22 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     ############################################################################
     # This block returns a candlestick plot of apple stock prices. You'll need
     # to delete or comment out this block and use your currency prices instead.
-    df = pd.read_csv(
-        'https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv'
-    )
-    fig = go.Figure(
-        data=[
-            go.Candlestick(
-                x=df['Date'],
-                open=df['AAPL.Open'],
-                high=df['AAPL.High'],
-                low=df['AAPL.Low'],
-                close=df['AAPL.Close']
-            )
-        ]
-    )
+    #df = pd.read_csv(
+        #'https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv'
+    #)
+    #fig = go.Figure(
+        #data=[
+            #go.Candlestick(
+                #x=df['Date'],
+                #open=df['AAPL.Open'],
+                #high=df['AAPL.High'],
+                #low=df['AAPL.Low'],
+                #close=df['AAPL.Close']
+            #)
+       # ]
+    #)
 
-    currency_string = 'default Apple price data fetch'
+    #currency_string = 'default Apple price data fetch'
     ############################################################################
     ############################################################################
 

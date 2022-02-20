@@ -8,7 +8,7 @@ import time
 # If you want different default values, configure it here.
 default_hostname = '127.0.0.1'
 default_port = 7497
-default_client_id = 10645 # can set and use your Master Client ID
+default_client_id = 116358 # can set and use your Master Client ID
 
 # This is the main app that we'll be using for sync and async functions.
 class ibkr_app(EWrapper, EClient):
@@ -27,7 +27,7 @@ class ibkr_app(EWrapper, EClient):
         # I've already done the same general process you need to go through
         # in the self.error_messages instance variable, so you can use that as
         # a guide.
-        self.historical_data = ''
+        self.historical_data = pd.DataFrame(columns=['date','open','high','low','close'])
         self.historical_data_end = ''
         self.contract_details = ''
         self.contract_details_end = ''
@@ -53,7 +53,16 @@ class ibkr_app(EWrapper, EClient):
         # Take a look at candlestick_plot.ipynb for some help!
         # assign the dataframe to self.historical_data.
         # print(reqId, bar)
-        self.historical_data = bar
+        formatted = pd.DataFrame(
+            {
+                'date': [bar.date],
+                'open': [bar.open],
+                'high': [bar.high],
+                'low': [bar.low],
+                'close': [bar.close],
+            }
+        )
+        self.historical_data = pd.concat([self.historical_data, formatted], ignore_index=True)
 
     def historicalDataEnd(self, reqId: int, start: str, end: str):
         # super().historicalDataEnd(reqId, start, end)
