@@ -1,0 +1,450 @@
+
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\Desktop\testapp 
+The system cannot find the path specified.
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://@github.com/Buuuuli/testapp.git 
+warning: redirecting to https://github.com/Buuuuli/testapp.git/
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.1)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.0)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.26)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.3)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+Terminate batch job (Y/N)? 
+
+C:\Users\vcm\PycharmProjects\testapp>ver.py
+
+Microsoft Windows [Version 10.0.19044.1466]
+
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.1)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.0)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.26)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.3)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+WARNING:waitress.queue:Task queue depth is 1
+Terminate batch job (Y/N)? 
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.1)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.0)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.26)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.3)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+Terminate batch job (Y/N)? 
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.1)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.0)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.26)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.3)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+Terminate batch job (Y/N)? 
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.1)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.0)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.26)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.3)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+Terminate batch job (Y/N)? 
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.1)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.0)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.26)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.3)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+Terminate batch job (Y/N)? 
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.1)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.0)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.26)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.3)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.1)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.0)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.26)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.3)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+Terminate batch job (Y/N)? 
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.1)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.0)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.26)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.3)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.1)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.2)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.2.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.1)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.27)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.6.0)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.3)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.3)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.4)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+Terminate batch job (Y/N)? 
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.2)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.2.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.1)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.27)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.3)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.6.0)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.4)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.3)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+WARNING: You are using pip version 21.1.2; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\vcm\PycharmProjects\testapp\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
+Terminate batch job (Y/N)? 
+C:\Users\vcm\PycharmProjects\testapp>cd C:\Users\vcm\PycharmProjects\testapp 
+
+C:\Users\vcm\PycharmProjects\testapp>git pull https://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@github.com/Buuuuli/testapp.git 
+From https://github.com/Buuuuli/testapp
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe -m pip install -r requirements.txt 
+Requirement already satisfied: numpy in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.22.2)
+Requirement already satisfied: dash in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 2)) (2.2.0)
+Requirement already satisfied: waitress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.0.0)
+Requirement already satisfied: pandas in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 4)) (1.4.1)
+Requirement already satisfied: gitpython in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from -r requirements.txt (line 5)) (3.1.27)
+Requirement already satisfied: dash-table==5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.0.0)
+Requirement already satisfied: plotly>=5.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (5.6.0)
+Requirement already satisfied: flask-compress in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (1.10.1)
+Requirement already satisfied: dash-html-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: Flask>=1.0.4 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.3)
+Requirement already satisfied: dash-core-components==2.0.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from dash->-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2021.3)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from pandas->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitpython->-r requirements.txt (line 5)) (4.0.9)
+Requirement already satisfied: click>=7.1.2 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (8.0.4)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: Werkzeug>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.0.3)
+Requirement already satisfied: itsdangerous>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from gitdb<5,>=4.0.1->gitpython->-r requirements.txt (line 5)) (5.0.0)
+Requirement already satisfied: six in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from plotly>=5.0.0->dash->-r requirements.txt (line 2)) (8.0.1)
+Requirement already satisfied: brotli in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from flask-compress->dash->-r requirements.txt (line 2)) (1.0.9)
+Requirement already satisfied: colorama in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from click>=7.1.2->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\vcm\pycharmprojects\testapp\venv\lib\site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash->-r requirements.txt (line 2)) (2.1.0)
+
+C:\Users\vcm\PycharmProjects\testapp>venv\Scripts\python.exe server.py 
