@@ -248,11 +248,11 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     currency_pair = str(contract_details).split(",")[10]
 
     if currency_pair == currency_string:
-        message = "Matched Contract" + message
+        message = "Matched Contract  " + message
     else:
         return "Not the right contract", go.Figure()
 
-    return ('Submitted query for ' + currency_string + message), fig
+    return ('Submitted query for  ' + currency_string +'  '+ message), fig
     # # # Give the candlestick figure a title
 
     ############################################################################
