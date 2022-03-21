@@ -200,20 +200,13 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     contract.exchange = 'IDEALPRO'  # 'IDEALPRO' is the currency exchange.
     contract.currency = currency_string.split(".")[1]
 
-    contract_details = fetch_contract_details(contract)
-
-    message = 'Submitted query for ' + currency_string
-
-    if isinstance(contract_details, str):
-        message = contract_details + "check input"
-        return message, go.Figure()
-
-    currency_pair = str(contract_details).split(",")[10]
-
-    if currency_pair == currency_string:
-        message = "Matched Contract" + message
+    contract_detail = fetch_contract_details(contract)
+    if type(contract_detail) == str:
+        return ("Error: wrong currency pairs (" + currency_string + "), please check your input"), go.Figure()
     else:
-        return "Not the right contract", go.Figure()
+        s = str(contract_detail).split(",")[10]
+        if s != currency_string:
+            return ("The system currency pairs " + s + " does not match your input " + currency_string), go.Figure()
 
     # # # Give the candlestick figure a title
 
@@ -252,7 +245,7 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     )
     fig.update_layout(title=('Exchange Rate: ' + currency_string))
     # # # Give the candlestick figure a title
-    return message, fig
+    return ('Submitted query for ' + currency_string), fig
 
     # # # Give the candlestick figure a title
 
