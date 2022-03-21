@@ -106,3 +106,28 @@ def fetch_historical_data(contract, endDateTime='', durationStr='30 D',
         time.sleep(0.01)
     app.disconnect()
     return app.historical_data
+
+
+def fetch_contract_details(contract, hostname=default_hostname,
+                          port=default_port, client_id=default_client_id):
+    app = ibkr_app()
+    app.connect(hostname, port, client_id)
+    while not app.isConnected():
+        time.sleep(0.01)
+
+    def run_loop():
+        app.run()
+
+    api_thread = threading.Thread(target=run_loop, daemon=True)
+    api_thread.start()
+    while isinstance(app.next_valid_id, type(None)):
+        time.sleep(0.01)
+    tickerId = app.next_valid_id
+    app.reqContractDetails(tickerId, contract)
+    while app.contract_details_end != tickerId:
+        time.sleep(0.01)
+        if app.error_messages.iloc[-1]['reqId'] ==1:
+            app.disconnect()
+            return app.error_messages[-1]['errorString']
+    app.disconnect()
+    return app.contract_details

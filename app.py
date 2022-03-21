@@ -1,6 +1,7 @@
 import dash
 import plotly.graph_objects as go
 from dash import dcc
+import dash_bootstrap_components as dbc
 from dash import html
 from dash.dependencies import Input, Output, State
 from ibapi.contract import Contract
@@ -8,6 +9,11 @@ from fintech_ibkr import *
 import pandas as pd
 
 # Make a Dash app!
+from fintech_ibkr.synchronous_functions import fetch_contract_details
+from fintech_ibkr.synchronous_functions import fetch_historical_data
+
+
+
 app = dash.Dash(__name__)
 server = app.server
 
@@ -127,7 +133,13 @@ app.layout = html.Div([
     # Div to hold the initial instructions and the updated info once submit is pressed
     html.Div(id='currency-output', children='Enter a currency code and press submit'),
     # Div to hold the candlestick graph
-    html.Div([dcc.Graph(id='candlestick-graph')]),
+    html.Div(
+        dcc.Loading(
+            id="loading-1",
+            type="default",
+            children=dcc.Graph(id='candlestick-graph')
+        )
+    ),
     # Another line break
     html.Br(),
     # Section title
@@ -223,7 +235,23 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
          ]
      )
     # # # Give the candlestick figure a title
-    fig.update_layout(title=('Exchange Rate: ' + currency_string))
+
+
+    contract_details = fetch_contract_details(contract)
+
+    message = 'Submitted query for ' + currency_string
+
+    if isinstance(contract_details,str):
+        message = contract_details + "check input"
+        return message, fig
+
+    currency_pair=str(contract_details).split(",")[10]
+
+    if currency_pair == currency_string:
+        message = "Matched Contract" + message
+    else:
+        return "Not the right contract", fig
+
     ############################################################################
     ############################################################################
 
@@ -251,7 +279,8 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     ############################################################################
 
     # Return your updated text to currency-output, and the figure to candlestick-graph outputs
-    return ('Submitted query for ' + currency_string), fig
+    return message, fig
+        #('Submitted query for ' + currency_string), ("Acutal Currency Pair" + currency_pair), fig
 
 # Callback for what to do when trade-button is pressed
 @app.callback(
