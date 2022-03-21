@@ -207,6 +207,8 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
         s = str(contract_detail).split(",")[10]
         if s != currency_string:
             return ("The system currency pairs " + s + " does not match your input " + currency_string), go.Figure()
+        else:
+            return "right contract"
 
     # # # Give the candlestick figure a title
 
