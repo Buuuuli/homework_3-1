@@ -214,6 +214,21 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     # Some default values are provided below to help with your testing.
     # Don't forget -- you'll need to update the signature in this callback
     #   function to include your new vars!
+    contract_details = fetch_contract_details(contract)
+
+    message = 'Submitted query for ' + currency_string
+
+    if isinstance(contract_details,str):
+        message = contract_details + "check input"
+        return message, go.Figure()
+
+    currency_pair=str(contract_details).split(",")[10]
+
+    if currency_pair == currency_string:
+        message = "Matched Contract" + message
+    else:
+        return "Not the right contract", go.Figure()
+
     cph = fetch_historical_data(
          contract=contract,
          endDateTime=endDateTime,
@@ -235,23 +250,7 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
          ]
      )
     # # # Give the candlestick figure a title
-
-
-    contract_details = fetch_contract_details(contract)
-
-    message = 'Submitted query for ' + currency_string
-
-    if isinstance(contract_details,str):
-        message = contract_details + "check input"
-        return message, fig
-
-    currency_pair=str(contract_details).split(",")[10]
-
-    if currency_pair == currency_string:
-        message = "Matched Contract" + message
-    else:
-        return "Not the right contract", fig
-
+    return message, fig
     ############################################################################
     ############################################################################
 
@@ -279,7 +278,7 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     ############################################################################
 
     # Return your updated text to currency-output, and the figure to candlestick-graph outputs
-    return message, fig
+    #return message, fig
         #('Submitted query for ' + currency_string), ("Acutal Currency Pair" + currency_pair), fig
 
 # Callback for what to do when trade-button is pressed

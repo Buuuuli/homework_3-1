@@ -126,8 +126,8 @@ def fetch_contract_details(contract, hostname=default_hostname,
     app.reqContractDetails(tickerId, contract)
     while app.contract_details_end != tickerId:
         time.sleep(0.01)
-        if app.error_messages.iloc[-1]['reqId'] ==1:
-            app.disconnect()
-            return app.error_messages[-1]['errorString']
+        #if app.error_messages.iloc[-1]['reqId'] ==1:
+            #app.disconnect()
+            #return app.error_messages[-1]['errorString']
     app.disconnect()
     return app.contract_details
