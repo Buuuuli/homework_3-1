@@ -9,8 +9,7 @@ from fintech_ibkr import *
 import pandas as pd
 
 # Make a Dash app!
-from fintech_ibkr.synchronous_functions import fetch_contract_details
-from fintech_ibkr.synchronous_functions import fetch_historical_data
+
 
 
 
@@ -202,6 +201,13 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     contract.exchange = 'IDEALPRO' # 'IDEALPRO' is the currency exchange.
     contract.currency = currency_string.split(".")[1]
 
+    contract_detail = fetch_contract_details(contract)
+    if type(contract_detail) == str:
+        return ("Error: wrong currency pairs (" + currency_string + "), please check your input"), go.Figure()
+    else:
+        s = str(contract_detail).split(",")[10]
+        if s != currency_string:
+            return ("The system currency pairs " + s +" does not match your input " + currency_string), go.Figure()
     ############################################################################
     ############################################################################
     # This block is the one you'll need to work on. UN-comment the code in this
@@ -236,12 +242,9 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
          ]
      )
 
-    contract_info = fetch_contract_details(contract)
-
-    if_right_pair = str(contract_info).split(",")[10]
 
     # # # Give the candlestick figure a title
-    return ('Submitted query for ' + currency_string), ("Acutal Currency Pair" + if_right_pair), fig
+    return ('Submitted query for ' + currency_string), fig
 
     # # # Give the candlestick figure a title
 

@@ -69,6 +69,17 @@ class ibkr_app(EWrapper, EClient):
         print("HistoricalDataEnd. ReqId:", reqId, "from", start, "to", end)
         self.historical_data_end = reqId
 
+    def contractDetails(self, reqId:int, contractDetails):
+        print(type(contractDetails))
+        print(contractDetails)
+        self.contract_details = contractDetails
+
+    def contractDetailsEnd(self, reqId:int):
+        print("ContractDetailsEnd. ReqId:", reqId)
+        self.contract_details_end = reqId
+
+
+
 
 def fetch_managed_accounts(hostname=default_hostname, port=default_port,
                            client_id=default_client_id):
@@ -132,8 +143,8 @@ def fetch_contract_details(contract, hostname=default_hostname,
     app.reqContractDetails(tickerId, contract)
     while app.contract_details_end != tickerId:
         time.sleep(0.01)
-        # if app.error_messages.iloc[-1]['reqId'] ==1:
-        # app.disconnect()
-        # return app.error_messages[-1]['errorString']
+        if app.error_messages.iloc[-1]['reqId'] ==1:
+            app.disconnect()
+            return app.error_messages[-1]['errorString']
     app.disconnect()
     return app.contract_details
