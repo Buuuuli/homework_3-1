@@ -1,7 +1,7 @@
 import dash
 import plotly.graph_objects as go
 from dash import dcc
-import dash_bootstrap_components as dbc
+
 from dash import html
 from dash.dependencies import Input, Output, State
 from ibapi.contract import Contract
@@ -214,20 +214,6 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     # Some default values are provided below to help with your testing.
     # Don't forget -- you'll need to update the signature in this callback
     #   function to include your new vars!
-    contract_details = fetch_contract_details(contract)
-
-    message = 'Submitted query for ' + currency_string
-
-    if isinstance(contract_details,str):
-        message = contract_details + "check input"
-        return message, go.Figure()
-
-    currency_pair=str(contract_details).split(",")[10]
-
-    if currency_pair == currency_string:
-        message = "Matched Contract" + message
-    else:
-        return "Not the right contract", go.Figure()
 
     cph = fetch_historical_data(
          contract=contract,
@@ -249,8 +235,16 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
              )
          ]
      )
+
+    contract_info = fetch_contract_details(contract)
+
+    if_right_pair = str(contract_info).split(",")[10]
+
     # # # Give the candlestick figure a title
-    return message, fig
+    return ('Submitted query for ' + currency_string), ("Acutal Currency Pair" + if_right_pair), fig
+
+    # # # Give the candlestick figure a title
+
     ############################################################################
     ############################################################################
 
