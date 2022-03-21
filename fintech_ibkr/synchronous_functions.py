@@ -1,4 +1,3 @@
-
 import pandas as pd
 from ibapi.client import EClient
 from ibapi.wrapper import EWrapper
@@ -8,7 +7,8 @@ import time
 # If you want different default values, configure it here.
 default_hostname = '127.0.0.1'
 default_port = 7497
-default_client_id = 116358 # can set and use your Master Client ID
+default_client_id = 116358  # can set and use your Master Client ID
+
 
 # This is the main app that we'll be using for sync and async functions.
 class ibkr_app(EWrapper, EClient):
@@ -27,7 +27,7 @@ class ibkr_app(EWrapper, EClient):
         # I've already done the same general process you need to go through
         # in the self.error_messages instance variable, so you can use that as
         # a guide.
-        self.historical_data = pd.DataFrame(columns=['date','open','high','low','close'])
+        self.historical_data = pd.DataFrame(columns=['date', 'open', 'high', 'low', 'close'])
         self.historical_data_end = ''
         self.contract_details = ''
         self.contract_details_end = ''
@@ -69,20 +69,24 @@ class ibkr_app(EWrapper, EClient):
         print("HistoricalDataEnd. ReqId:", reqId, "from", start, "to", end)
         self.historical_data_end = reqId
 
+
 def fetch_managed_accounts(hostname=default_hostname, port=default_port,
                            client_id=default_client_id):
     app = ibkr_app()
     app.connect(hostname, port, client_id)
     while not app.isConnected():
         time.sleep(0.01)
+
     def run_loop():
         app.run()
+
     api_thread = threading.Thread(target=run_loop, daemon=True)
     api_thread.start()
     while isinstance(app.next_valid_id, type(None)):
         time.sleep(0.01)
     app.disconnect()
     return app.managed_accounts
+
 
 def fetch_historical_data(contract, endDateTime='', durationStr='30 D',
                           barSizeSetting='1 hour', whatToShow='MIDPOINT',
@@ -92,8 +96,10 @@ def fetch_historical_data(contract, endDateTime='', durationStr='30 D',
     app.connect(hostname, port, client_id)
     while not app.isConnected():
         time.sleep(0.01)
+
     def run_loop():
         app.run()
+
     api_thread = threading.Thread(target=run_loop, daemon=True)
     api_thread.start()
     while isinstance(app.next_valid_id, type(None)):
@@ -109,7 +115,7 @@ def fetch_historical_data(contract, endDateTime='', durationStr='30 D',
 
 
 def fetch_contract_details(contract, hostname=default_hostname,
-                          port=default_port, client_id=default_client_id):
+                           port=default_port, client_id=default_client_id):
     app = ibkr_app()
     app.connect(hostname, port, client_id)
     while not app.isConnected():
@@ -126,8 +132,8 @@ def fetch_contract_details(contract, hostname=default_hostname,
     app.reqContractDetails(tickerId, contract)
     while app.contract_details_end != tickerId:
         time.sleep(0.01)
-        #if app.error_messages.iloc[-1]['reqId'] ==1:
-            #app.disconnect()
-            #return app.error_messages[-1]['errorString']
+        # if app.error_messages.iloc[-1]['reqId'] ==1:
+        # app.disconnect()
+        # return app.error_messages[-1]['errorString']
     app.disconnect()
     return app.contract_details
