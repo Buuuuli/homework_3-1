@@ -4,7 +4,7 @@ from fintech_ibkr import *
 
 hostname = '127.0.0.1'
 port = 7497
-client_id = 10645 # can set and use your Master Client ID
+client_id = 116358 # can set and use your Master Client ID
 
 value = "EUR.USD" # This is what your text input looks like on your app
 
