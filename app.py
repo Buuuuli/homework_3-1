@@ -1,3 +1,5 @@
+import time
+
 import dash
 import pandas as pd
 import plotly.graph_objects as go
@@ -8,10 +10,10 @@ from fintech_ibkr import *
 from dash import dcc, dash_table
 from dash import html
 import dash_daq as daq
+import dash_bootstrap_components as dbc
+
 from datetime import date
-
 df = pd.read_csv('C:\\submitted_orders.csv')
-
 # Make a Dash app!
 app = dash.Dash(__name__)
 
@@ -320,12 +322,11 @@ app.layout = html.Div([
     dcc.Input(id='lmtPrice', value='100', type='number'),
     # Submit button for the trade
     html.Button('Trade', id='trade-button', n_clicks=0),
-    dcc.ConfirmDialog(
-        id='confirm-alert',
-        message='',
-    ),
-    dash_table.DataTable(df.to_dict('records'), [{"name": i, "id": i} for i in df.columns], id='table')
-
+    dbc.Container([
+    dbc.Label('Click a cell in the table:'),
+    dash_table.DataTable(df.to_dict('records'),[{"name": i, "id": i} for i in df.columns], id='tbl'),
+    dbc.Alert(id='tbl_out'),
+])
 ])
 
 @app.callback(
@@ -463,7 +464,6 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
     # We're going to output the result to trade-output
     Output(component_id='trade-output', component_property='children'),
     # Only run this callback function when the trade-button is pressed
-    Output(component_id='table', component_property='data'),
     Input('trade-button', 'n_clicks'),
     # We DON'T want to run this function whenever buy-or-sell, Contract_Symbol,
     #   or trade-amt is updated, so we pass those in as States, not Inputs:
@@ -533,10 +533,16 @@ def trade(n_clicks, SecType, Contract_Symbol, currency, exchange, primaryExchang
                               'size':size,'order_type':order_type,'lmt_price':lmt_price}, ignore_index=True)
 
     df_file.to_csv("C:\\submitted_orders.csv", index=False)
-
-    df = pd.read_csv('C:\\submitted_orders.csv')
     # Return the message, which goes to the trade-output div's children
-    return msg, df.to_dict('records')
+    return msg
+
+@app.callback(Output('tbl_out', 'children'), Input('tbl', 'active_cell'))
+def update_graphs(active_cell):
+    return str(active_cell) if active_cell else "Click the table"
+
+
+
+
 
 # Run it!
 if __name__ == '__main__':
