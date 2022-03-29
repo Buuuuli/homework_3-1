@@ -3,3 +3,4 @@ dash
 ibapi
 jupyter
 kaleido
+dash_daq

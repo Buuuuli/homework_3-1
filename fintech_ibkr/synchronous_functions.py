@@ -2,14 +2,12 @@ from fintech_ibkr.ibkr_app import ibkr_app
 import threading
 import time
 from datetime import datetime
+
 # If you want different default values, configure it here.
 default_hostname = '127.0.0.1'
 default_port = 7497
-default_client_id = 116358  # can set and use your Master Client ID
+default_client_id = 116358 # can set and use your Master Client ID
 timeout_sec = 5
-
-
-
 
 def fetch_managed_accounts(hostname=default_hostname, port=default_port,
                            client_id=default_client_id):
