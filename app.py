@@ -323,9 +323,11 @@ app.layout = html.Div([
     # Submit button for the trade
     html.Button('Trade', id='trade-button', n_clicks=0),
     dbc.Container([
-    dbc.Label('Click a cell in the table:'),
-    dash_table.DataTable(df.to_dict('records'),[{"name": i, "id": i} for i in df.columns], id='tbl'),
-    dbc.Alert(id='tbl_out'),
+        dbc.Label('Click a cell in the table:'),
+        dash_table.DataTable(data = df.to_dict('records'),
+                             columns=[{"name": i, "id": i} for i in df.columns],
+                             id='tbl'),
+        dbc.Alert(id='tbl_out'),
 ])
 ])
 
@@ -463,6 +465,7 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
 @app.callback(
     # We're going to output the result to trade-output
     Output(component_id='trade-output', component_property='children'),
+    Output(component_id='tbl', component_property='data'),
     # Only run this callback function when the trade-button is pressed
     Input('trade-button', 'n_clicks'),
     # We DON'T want to run this function whenever buy-or-sell, Contract_Symbol,
@@ -514,7 +517,7 @@ def trade(n_clicks, SecType, Contract_Symbol, currency, exchange, primaryExchang
     df_file = pd.read_csv('C:\\submitted_orders.csv')
 
     # find order account
-    order_account = order.account
+    # order_account = order.account
     # find order detail
     order_ID = m['orderId'][0]
 
@@ -534,11 +537,8 @@ def trade(n_clicks, SecType, Contract_Symbol, currency, exchange, primaryExchang
 
     df_file.to_csv("C:\\submitted_orders.csv", index=False)
     # Return the message, which goes to the trade-output div's children
-    return msg
+    return msg, df_file.to_dict('records')
 
-@app.callback(Output('tbl_out', 'children'), Input('tbl', 'active_cell'))
-def update_graphs(active_cell):
-    return str(active_cell) if active_cell else "Click the table"
 
 
 

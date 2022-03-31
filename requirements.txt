@@ -4,3 +4,4 @@ ibapi
 jupyter
 kaleido
 dash_daq
+dash_bootstrap_components
